@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Cards = () => {
   const [openChat, setOpenChat] = useState(false);
