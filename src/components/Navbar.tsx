@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <div
       className="bg-white w-full h-[50px] lg:w-full lg:h-[78px]
-    shadow-[0px_1px_12px_0px_rgba(0,0,0,0.16)]"
+    shadow-[0px_1px_12px_0px_rgba(0,0,0,0.16)] my-auto"
     >
       <div className="flex justify-between lg:px-4">
         <a
@@ -14,7 +14,7 @@ const Navbar = () => {
         </a>
         <div className="flex items-center justify-center ">
           {/* For large displays  */}
-          <div className="hidden lg:flex items-center space-x-4  pt-[24px] pr-[38px]">
+          <div className="hidden lg:flex justify-center items-center space-x-4  pt-[24px] pr-[38px]">
             <svg
               width="19"
               height="19"

@@ -6,7 +6,7 @@ const Cards = () => {
   const [openQuery, setOpenQuery] = useState(false);
 
   return (
-    <div className="flex flex-col justify-center items-center gap-8  mt-20 pt-10 pb-20">
+    <div className="flex flex-col justify-center items-center -z-50 gap-8  mt-20 pt-10 pb-20">
       <div
         className={`w-[351px] lg:w-[963px] ${
           openChat ? "h-[167px] lg:h-[217px]" : "h-[87px] lg:h-[117px]"
@@ -14,7 +14,7 @@ const Cards = () => {
       lg:rounded-[11px] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.17)] lg:shadow-[0px_5px_10px_0px_rgba(0,0,0,0.12)] 
       p-5 border-[1.4px] my-auto border-[#EFEFEF] transition-all ease-in-out duration-500 `}
       >
-        <div className="w-full flex flex-row justify-between items-center gap-4 my-auto ">
+        <div className="w-full flex flex-row justify-between items-center gap-4 ">
           <div className=" flex flex-row items-center gap-6">
             {/* Chat*/}
             <svg
@@ -52,7 +52,7 @@ const Cards = () => {
             </div>
           </div>
           {openChat ? (
-            <button onClick={() => setOpenChat(!openChat)}>
+            <button id="openChatBtn" onClick={() => setOpenChat(!openChat)}>
               <svg
                 width="20"
                 height="12"
@@ -67,7 +67,7 @@ const Cards = () => {
               </svg>
             </button>
           ) : (
-            <button onClick={() => setOpenChat(!openChat)}>
+            <button id="closeChatBtn" onClick={() => setOpenChat(!openChat)}>
               <svg
                 width="16"
                 height="9"
@@ -307,7 +307,10 @@ const Cards = () => {
             </div>
           </div>
           {openSocail ? (
-            <button onClick={() => setOpenSocail(!openSocail)}>
+            <button
+              id="openSocialBtn"
+              onClick={() => setOpenSocail(!openSocail)}
+            >
               <svg
                 width="20"
                 height="12"
@@ -322,7 +325,10 @@ const Cards = () => {
               </svg>
             </button>
           ) : (
-            <button onClick={() => setOpenSocail(!openSocail)}>
+            <button
+              id="closeSocialBtn"
+              onClick={() => setOpenSocail(!openSocail)}
+            >
               <svg
                 width="16"
                 height="9"
@@ -393,7 +399,10 @@ const Cards = () => {
             </div>
           </div>
           {openQuery ? (
-            <button onClick={() => setOpenQuery(!openQuery)}>
+            <button
+              id={"openQueryBtn"}
+              onClick={() => setOpenQuery(!openQuery)}
+            >
               <svg
                 width="20"
                 height="12"
@@ -408,7 +417,7 @@ const Cards = () => {
               </svg>
             </button>
           ) : (
-            <button onClick={() => setOpenQuery(!openQuery)}>
+            <button id="closeQueryBtn" onClick={() => setOpenQuery(!openQuery)}>
               <svg
                 width="16"
                 height="9"
