@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <div className="relative">
       <div
-        className="h-[300px] lg:h-[480px] min-w-[100vw] bg-cover bg-bottom overflow-hidden"
+        className="h-[300px] lg:h-[480px] w-full bg-cover bg-bottom overflow-hidden"
         style={{
           backgroundImage: "url('/wave-lg.svg')",
         }}
