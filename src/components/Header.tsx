@@ -14,7 +14,7 @@ const Header = () => {
           <p className="mt-4 text-[#2C3E50]">Find Travel guide, FAQ, chat,</p>
         </div>
       </div>
-      <div className="absolute top-[200px] left-[12px] lg:left-1/8 lg:top-[400px] z-[100px] flex flex-col lg:flex-row lg:gap-[19px] justify-center items-center">
+      <div className="absolute top-[200px] left-0 right-0 m-auto lg:top-[400px] z-[100px] flex flex-col lg:flex-row lg:gap-[19px] justify-center items-center">
         <div
           className="w-[351px] h-[67px] lg:w-[472px] lg:h-[117px] flex justify-between items-center gap-4
            bg-white rounded-[11px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.12)] p-5"
