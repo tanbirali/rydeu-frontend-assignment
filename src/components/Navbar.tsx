@@ -321,9 +321,12 @@ const Navbar = () => {
           {/* For small displays  */}
 
           <div className="flex lg:hidden items-center w-full px-2">
-            <p className="text-[10px] font-semibold leading-[12.19px] tracking-[0.02em] text-left pr-[20px]">
-              Open Requests
-            </p>
+            <div className="relative w-[82px] h-[12px]">
+              <p className="text-[10px] font-semibold leading-[12.19px] tracking-[0.02em] text-left">
+                Open Requests
+              </p>
+              <span className="absolute -top-1 right-1 h-1 w-1 animate-ping rounded-full bg-[#FD2E5A] "></span>
+            </div>
 
             <svg
               width="13"

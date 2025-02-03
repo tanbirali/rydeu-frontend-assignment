@@ -6,10 +6,10 @@ const Cards = () => {
   const [openQuery, setOpenQuery] = useState(false);
 
   return (
-    <div className="flex flex-col justify-center items-center -z-50 gap-8  mt-20 pt-10 pb-20">
+    <div className="flex flex-col justify-center items-center -z-50 gap-8  mt-10 pt-10 pb-20">
       <div
         className={`w-[351px] lg:w-[963px] ${
-          openChat ? "h-[167px] lg:h-[217px]" : "h-[87px] lg:h-[117px]"
+          openChat ? "h-[167px] lg:h-[217px]" : "h-[67px] lg:h-[117px]"
         } flex flex-col  items-center gap-4 bg-white rounded-[8px]  
       lg:rounded-[11px] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.17)] lg:shadow-[0px_5px_10px_0px_rgba(0,0,0,0.12)] 
       p-5 border-[1.4px] my-auto border-[#EFEFEF] transition-all ease-in-out duration-500 `}
@@ -45,8 +45,10 @@ const Cards = () => {
 
             {/* Chat Text */}
             <div className="flex flex-col items-start">
-              <p className="text-lg font-bold text-[#073A4D]">Chat</p>
-              <p className="text-sm text-gray-500">
+              <p className="text-[12px] lg:text-lg font-bold text-[#073A4D]">
+                Chat
+              </p>
+              <p className="text-[10px] lg:text-sm text-gray-500">
                 Lorem ipsum dolor sit amet
               </p>
             </div>
@@ -277,7 +279,7 @@ const Cards = () => {
       {/* Social  */}
       <div
         className={`w-[351px] lg:w-[963px] ${
-          openSocail ? "h-[147px] lg:h-[217px]" : "h-[87px] lg:h-[117px]"
+          openSocail ? "h-[147px] lg:h-[217px]" : "h-[67px] lg:h-[117px]"
         } flex flex-col  items-center gap-4 bg-white 
       rounded-[11px] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.17)] lg:shadow-[0px_5px_10px_0px_rgba(0,0,0,0.12)]  p-5 border-[1.4px] border-[#EFEFEF] transition-all duration-500 ease-in-out `}
       >
@@ -300,8 +302,10 @@ const Cards = () => {
 
             {/* Social  Text */}
             <div className="flex flex-col items-start">
-              <p className="text-lg font-bold text-[#073A4D]">Social</p>
-              <p className="text-sm text-gray-500">
+              <p className="text-[12px] lg:text-lg font-bold text-[#073A4D]">
+                Social
+              </p>
+              <p className="text-[10px] lg:text-sm text-gray-500">
                 Lorem ipsum dolor sit amet
               </p>
             </div>
@@ -364,7 +368,7 @@ const Cards = () => {
       {/* Query  */}
       <div
         className={`w-[351px] ${
-          openQuery ? "h-[620px] lg:h-[467px]" : "h-[87px] lg:h-[117px]"
+          openQuery ? "h-[570px] lg:h-[467px]" : "h-[67px] lg:h-[117px]"
         }  lg:w-[963px] flex flex-col items-center gap-4 bg-white 
       rounded-[11px] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.17)] lg:shadow-[0px_5px_10px_0px_rgba(0,0,0,0.12)] 
        p-5 border-[1.4px] border-[#EFEFEF] transition-all ease-in-out duration-500 `}
@@ -392,8 +396,10 @@ const Cards = () => {
 
             {/* Send Query Text */}
             <div className="flex flex-col items-start">
-              <p className="text-lg font-bold text-[#073A4D]">Send Query</p>
-              <p className="text-sm text-gray-500">
+              <p className="text-[12px] lg:text-lg font-bold text-[#073A4D]">
+                Send Query
+              </p>
+              <p className="text-[10px] lg:text-sm text-gray-500">
                 Lorem ipsum dolor sit amet
               </p>
             </div>
@@ -442,7 +448,9 @@ const Cards = () => {
           >
             <div className="flex flex-col gap-3 lg:flex-row lg:items-center">
               <div className="flex flex-col items-start justify-center">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name" className="text-[12px] lg:text-lg">
+                  Name
+                </label>
                 <input
                   type="text"
                   name="name"
@@ -452,7 +460,9 @@ const Cards = () => {
                 />
               </div>
               <div className="flex flex-col items-start justify-center">
-                <label htmlFor="name">Email</label>
+                <label htmlFor="name" className="text-[12px] lg:text-lg">
+                  Email
+                </label>
                 <input
                   type="text"
                   name="email"
@@ -464,7 +474,9 @@ const Cards = () => {
             </div>
             <div className="flex flex-col gap-3 lg:flex-row lg:items-center">
               <div className="flex flex-col items-start justify-center">
-                <label htmlFor="name">Subject</label>
+                <label htmlFor="name" className="text-[12px] lg:text-lg">
+                  Subject
+                </label>
                 <input
                   type="text"
                   name="subject"
@@ -474,7 +486,9 @@ const Cards = () => {
                 />
               </div>
               <div className="flex flex-col items-start justify-center">
-                <label htmlFor="name">Order no.</label>
+                <label htmlFor="name" className="text-[12px] lg:text-lg">
+                  Order no.
+                </label>
                 <input
                   type="text"
                   name="orderno"
@@ -486,7 +500,9 @@ const Cards = () => {
             </div>
             <div className="w-full flex flex-col gap-3 lg:flex-row lg:items-center">
               <div className="flex flex-col items-start justify-center">
-                <label htmlFor="name">Your Query</label>
+                <label htmlFor="name" className="text-[12px] lg:text-lg">
+                  Your Query
+                </label>
                 <input
                   type="text"
                   name="query"
@@ -496,7 +512,7 @@ const Cards = () => {
                 />
               </div>
             </div>
-            <button className="bg-[#FD2E5A] rounded-[3px] w-[191px] h-[33px]  text-white font-bold">
+            <button className="bg-[#FD2E5A] rounded-[3px] w-[171px] lg:w-[191px] h-[33px] text-[12px] lg:text-xl  text-white font-bold">
               Submit{" "}
             </button>
           </div>

@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <div className="relative">
       <div
-        className="h-[300px] lg:h-[480px] w-full bg-cover bg-bottom overflow-hidden"
+        className="h-[300px] lg:h-[470px] w-full bg-cover bg-bottom overflow-hidden"
         style={{
           backgroundImage: "url('/wave-lg.svg')",
         }}
@@ -14,7 +14,7 @@ const Header = () => {
           <p className="mt-4 text-[#2C3E50]">Find Travel guide, FAQ, chat,</p>
         </div>
       </div>
-      <div className="absolute top-[200px] left-0 right-0 m-auto lg:top-[400px] z-[100px] flex flex-col lg:flex-row lg:gap-[19px] justify-center items-center">
+      <div className="absolute top-[210px] left-0 right-0 m-auto lg:top-[320px] z-[100px] flex flex-col lg:flex-row lg:gap-[19px] justify-center items-center">
         <div
           className="w-[351px] h-[67px] lg:w-[472px] lg:h-[117px] flex justify-between items-center gap-4
            bg-white rounded-[11px] shadow-[0px_5px_10px_0px_rgba(0,0,0,0.12)] p-5"
@@ -41,8 +41,10 @@ const Header = () => {
             </svg>
 
             <div className="flex flex-col items-start">
-              <p className="text-lg font-bold text-[#073A4D]">FAQ</p>
-              <p className="text-sm text-gray-500">
+              <p className="text-[14px] lg:text-lg font-bold text-[#073A4D]">
+                FAQ
+              </p>
+              <p className="text-[12px] lg:text-sm text-gray-500">
                 Lorem ipsum dolor sit amet
               </p>
             </div>
@@ -89,9 +91,14 @@ const Header = () => {
             </svg>
 
             <div className="flex flex-col items-start">
-              <p className="text-lg font-bold text-[#073A4D]">Travel guide</p>
-              <p className="text-sm text-gray-500">
+              <p className="text-[14px] lg:text-lg font-bold text-[#073A4D]">
+                Travel guide
+              </p>
+              <p className=" hidden lg:block text-sm text-gray-500">
                 Lorem ipsum dolor sit amet
+              </p>
+              <p className="lg:hidden block text-[12px] text-gray-500">
+                Lorem ipsum dolor sit amet consecterur adipiscing elit
               </p>
             </div>
           </div>
